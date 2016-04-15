@@ -1,3 +1,3 @@
 class NewsItem < ActiveRecord::Base
-  ount_uploader :image, ImageUploader
+  mount_uploader :image, ImageUploader
 end
