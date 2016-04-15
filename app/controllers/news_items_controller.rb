@@ -17,6 +17,10 @@ class NewsItemsController < ApplicationController
     @news_item = NewsItem.new
   end
 
+  def news_item_params
+  params.require(:news_item).permit(:title, :sub_header, :content, :image)
+  end
+  
   # GET /news_items/1/edit
   def edit
   end
